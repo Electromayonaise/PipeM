@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pipe Mania Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Center the game board and controls */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        /* Stylish title */
+        .game-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 48px;
+            color:#34b6c7; /* Blue color */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="game-title">Pipe Mania</h1> 
+    <div id="menu" class="menu">
+        <button id="start-game-button">Start Game</button>
+        <button id="check-scores-button">Check Scores</button>
+    </div>
+    <div id="game-container" class="game-container" style="display: none;">
+        <div id="game-board" class="game-board"></div>
+        <div id="game-controls" class="game-controls">
+            <button id="check-pipes-button">Check Pipes</button>
+            <button id="exit-game-button">Exit Game</button>
+        </div>
+        <div id="score-display" class="score-display">Score: 0</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
